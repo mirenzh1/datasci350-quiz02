@@ -10,3 +10,7 @@ quarto render
 git status
 git add .
 git commit -m "Add site pages and freeze"
+git push origin main
+git add commands.txt
+git commit -m "Add command log"
+git push origin main
