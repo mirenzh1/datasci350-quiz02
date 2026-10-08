@@ -1,0 +1,20 @@
+# Budget and Revenue
+
+Film budgets and worldwide box office revenue. @fig-budget-revenue shows the relationship between them.
+
+```{python}
+#| label: fig-budget-revenue
+#| echo: true
+#| fig-cap: "Film Budget vs. Worldwide Revenue"
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Budget (Million USD)")
+plt.ylabel("Revenue (Million USD)")
+plt.title("Budget vs. Revenue")
+plt.show()
+```

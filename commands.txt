@@ -1,0 +1,12 @@
+touch commands.txt
+quarto create project website .
+git add .gitignore
+git commit -m "Add gitignore"
+rm about.qmd
+touch budget-revenue.qmd
+touch runtime-rating.qmd
+touch bond.qmd
+quarto render
+git status
+git add .
+git commit -m "Add site pages and freeze"
